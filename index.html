@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BREAU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/CSS/style.css">
+<link href="13.jpg" rel="icon">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+h1 {
+  text-decoration: bold;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 50px;
+}
+
+h6 {
+  color: blue;
+}
+
+ h5 {
+  font-style: italic;
+} */
+
+h4 {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('bg_1.jpg');
+  min-height: 90%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("eye.JPG");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+/* .bgimg-3 {
+  background-image: url("/Pictures/dad.jpeg");
+  min-height: 400px;
+} */
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#resume" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-database"></i> RESUME</a>
+    <a href="#project" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#project" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RICHARD BREAU <span class="w3-hide-small">WEBSITE</span></span>
+    <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>  -->
+    
+    <!-- <img src="b.png" style="width:500px;height:600px;"><img src="bb.png" style="width:500px;height:600px;"><img src="13.jpg" style="width:500px;height:600px;"> -->
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center"><b>ABOUT ME</b></h2>
+  <p class="w3-center"><em></em></p>
+  <p>My name is Richard Breau and I graduated from Eastern College in 2021 with a diploma in Advanced Systems Management and Cybersecurity.  Since then I have completed two certifications from CompTIA in A+, as well as Security+, and also had completed Microsofts Certified Security Operations Analyst Associate, Microsoft Cybersecurity Architect Expert, Microsoft Azure Administration Associate.  This has been the start of my path towards my main goal of being part of the security solutions using AI and all the potential possibilities it holds. 
+    I started with some simple programs such as guess the number, a tip calculator, and built up the difficulties by creating a golf hanicap calculator, and recreating projects such as the old pong game, and a count down clock towards my goals.
+    
+ </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br> -->
+      <img src="Chip.jpeg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> Using various tools I have constructed this personal website that I have online for all to see, but with the goal of creating one using absolutely no other template but that which I make, using the styling and javascript from my own typing.  The purpose of this is to show myself that I am able to put in code what I see in my mind and not limited by my skills of what I can do with another's template.  This might not seem that special, but for someone like me who didn't start learning this until 2020, it is proof of what Walt Disney said <q>It's kind of fun to do the impossible</q> so with the confidence this give me, my next challenge is to take on the impossible.</p>
+    </div>
+  </div>
+
+
+
+  <!-- <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div> -->
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-half w3-section">
+    
+    <!-- <span class="w3-xlarge">14+</span><br> -->
+    <!-- Partners -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">55+</span><br>
+    Projects Done -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">89+</span><br>
+    Happy Clients -->
+  </div>
+  <!-- <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br> 
+    Meetings  -->
+    
+  </div>
+</div>
+  <div class="w3-content w3-container w3-padding-64" id="resume">
+    <h2 class="w3-center"><b>BRIEF RESUME</b></h2>
+  
+
+    <body class="w3-light-grey">
+
+      <!-- Page Container -->
+      <div class="w3-content w3-margin-top" style="max-width:1400px;">
+      
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+        
+          <!-- Left Column -->
+          <div class="w3-third">
+          
+            <div class="w3-white w3-text-grey w3-card-4">
+              <div class="w3-display-container">
+                <img src="profil.jpg" style="width:100%" alt="Avatar">
+                <div class="w3-display-bottomleft w3-container w3-text-white">
+                  <h2></h2>
+                </div>
+              </div>
+              <div class="w3-container">
+                <p><i class="fa fa-cloud fa-fw w3-margin-right w3-large w3-text-black"></i>information Technology</p>
+                <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Fredericton, NB</p>
+                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>richardbreau@gmail.com</p>
+                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>1 506-476-5349</p>
+
+                <hr>
+                <p class="w3-large w3-text-theme"><b><i class="fa fa-language fa-fw w3-margin-right w3-text-black"></i>Fluent Languages</b></p>
+                <h4><p>English / French</p></h4>
+                
+                <br>
+      
+                <h3><p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-black"></i>Certifications</b></p></h3>
+                
+                
+                <h6><a href="a+.PNG" open="A+" class="btn"><i class="fa fa-certificate"></i> CompTIA A+</button></a></h6>
+                <h6><a href="security.PNG" open="Security+" class="btn"><i class="fa fa-certificate"></i> CompTIA Security+</button></a></h6>
+                
+                <p>Microsoft Certified Security Operations Analyst Associate</p>
+                <p>Microsoft Cybersecurity Architect Expert</p>
+                <p>Microsoft Azure Administration Associate</p>
+                
+                <br>
+      
+               
+              </div>
+            </div><br>
+      
+          <!-- End Left Column -->
+          </div>
+      
+          <!-- Right Column -->
+          <div class="w3-twothird">
+      
+            <div class="w3-container w3-card w3-white">
+              <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-mortar-board fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h3>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>EASTERN COLLEGE</b></h5>
+                <p class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2020 - September 2021</p>
+                <p>ADVANCED SYSTEMS MANAGEMENT AND CYBERSECURITY   (Graduated with distinction)</p>
+                
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>COMPUCOLLEGE</b></h5>
+                <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2000 - 2001</h6>
+                <p>ACCOUNTING WITH COMPUTER APPLICATIONS</p>
+                <hr>
+              </div>
+            </div>
+      
+            <hr>
+          
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+              <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h3>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>BILINGUAL TECHNICAL/SECURITY ANALYST - BULLETPROOF GLI GROUP</b></h5>
+                <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Sept 2023 </h6>
+                <p>
+                  <dl>
+                    <dt> - A point of contact for customers needing technical assistance with issues such as:</dt>
+                      <dl>
+                        <dd>Add or removal of programs and software.</dd>
+                        <dd>Communicating using effective understandable language</dd>
+                      </dl>
+                    <dt> - Investigation of system for potential malicious malware, or ransomwares.</dt>
+                    <dt> - Analyzing and actioning alerts coming into Sentinel ensuring compliance.</dt>
+                  </dl>  
+                </p>
+                <hr>
+      
+              </div>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>ACCESS MANAGEMENT ANALYST - SERVICE NEW BRUNSWICK</b></h5>
+                <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MAY 2021 - SEPT 2021 (Work Placement)</h6>
+                <p>
+                  <dL>
+                    <dt> - Contact with clients regarding overdue accounts and documents all complaints.</dt>
+                    <dt> - Reconciliation of accounts for balancing and accuracy.</dt>
+                    <dt> - Data entry of payments and of invoicing to business clients.</dt>
+                    <dt> - Verifying accuracy of accounts.</dt>
+                  </dL>	</p>
+                <hr>
+              </div>
+
+              <!-- <div class="w3-container">
+                <h5 class="w3-opacity"><b>ACCOUNT RECEIVABLE CLERK - HORIZON HEALTH</b></h5>
+                <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2018 - 2020</h6>
+                <p>
+                  <dl>
+                    <dt> - Department support for manage access for:
+                      <dl>
+                        <dd> - Users, Groups, Mailboxes, Instant Messaging.</dd>
+                        <dd> - Remote access services network shares</dd>
+                        <dd> - Resetting of passwords and holding accounts</dd>
+                      </dl>
+                    <dt> - Ensure that applications/data security is met through compliance.</dt>
+                    <dt> - Assist in the development and documentation of new processes.</dt>
+                    <dt> - Ensure requests are completed within key performance indicators.</dt>
+                  </dl> </p><br>
+              </div> -->
+      
+              <!-- <div class="w3-container">
+                <h5 class="w3-opacity"><b>ACCOUNT RECEIVABLE CLERK - SERVICE NEW BRUNSWICK</b></h5>
+                <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Sept 2018</h6>
+                <p>
+                  <dL>
+                    <dt> - Contact with students regarding overdue accounts and documents all complaints.</dt>
+                    <dt> - Calculate and negotiate payment options with affordability.</dt>
+                    <dt> - Performing of skip tracing to locate customers that have moved.</dt>
+                    <dt> - Verifying accuracy of accounts for bankruptcy.</dt>
+                  </dL> </p><br>
+              </div> -->
+      
+              <h6><a href="Richard Breau.pdf" open="Resume" class="btn"><i class="fa fa-folder"></i> OPEN FULL RESUME</button></a></h6>
+      
+            </div>
+      
+            
+      
+          <!-- End Right Column -->
+          </div>
+          
+        <!-- End Grid -->
+        </div>
+        
+  <!-- <body>
+
+    <!- Navbar (sit on top) -->
+    <!-- <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="/timeline/timeline.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="/Resume/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="	fa fa-reorder"></i>RESUME</a>
+        <a href="/Projects/project.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+        <a href="/python/Python.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-code-o"></i> PYTHON</a>
+        <a href="/Contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+          <i class="fa fa-search"></i>
+        </a>
+      </div> -->
+    
+      <!-- Navbar on small screens -->
+      <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </div>  -->
+    
+    <!-- <body class="w3-light-grey"> -->
+    
+    <!-- Page Container -->
+    <!-- <div class="w3-content w3-margin-top" style="max-width:1400px;"> -->
+    
+      <!-- The Grid -->
+      <!-- <div class="w3-row-padding"> -->
+      
+        <!-- Left Column -->
+        <!-- <div class="w3-auto"> -->
+        
+          <!-- <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="profile.jpg" style="width:100%" alt="Avatar">
+              <div class="w3-display-bottomleft w3-container w3-text-white">
+                <h2></h2>
+              </div>
+            </div>
+            <div class="w3-container">
+             <h3> <p><i class="fa fa-cloud fa-fw w3-margin-right w3-large w3-text-black"></i>information Technology</p></h3>
+              <h3><p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Fredericton, NB</p></h3>
+              <h3><p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>richardbreau@gmail.com</p></h3>
+              <h3><p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>1 506-476-5349</p></h3>
+              <p>On social media</p>
+              <i class="fa fa-github"></i>
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+              <hr>
+              <p class="w3-large w3-text-theme"><b><i class="fa fa-language fa-fw w3-margin-right w3-text-black"></i>Languages</b></p>
+              <p>English</p>
+              <p>French</p>
+              
+              <br>
+    
+              <p class="w3-large"><b><i class="fa fa-book fa-fw w3-margin-right w3-text-black"></i>Certifications</b></p>
+              
+              
+              <h6><a href="a+.PNG" open="A+" class="btn"><i class="fa fa-certificate"></i> CompTIA A+</button></a></h6>
+              <h6><a href="security.PNG" open="Security+" class="btn"><i class="fa fa-certificate"></i> CompTIA Security+</button></a></h6>
+              
+              <p>Microsoft Certified Security Operations Analyst Associate</p>
+              <p>Microsoft Cybersecurity Architect Expert</p>
+              <p>Microsoft Azure Administration Associate</p>
+              
+              <br>
+    
+             
+            </div>
+          </div><br> -->
+    
+        <!-- End Left Column -->
+        <!-- </div> -->
+    
+        <!-- Right Column -->
+        <!-- <div class="w3-auto"> -->
+    
+          <!-- <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-mortar-board fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>EASTERN COLLEGE</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2020 - September 2021</h6>
+              <p>ADVANCED SYSTEMS MANAGEMENT AND CYBERSECURITY   (Graduated with distinction)</p>
+              
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>COMPUCOLLEGE</b></h5>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2000 - 2001</h6>
+              <p>ACCOUNTING WITH COMPUTER APPLICATIONS</p>
+              <hr>
+            </div>
+          </div>
+    
+          <hr>
+        
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
+            <div class="w3-container">
+              <h4 class="w3-opacity"><b>BILINGUAL TECHNICAL/SECURITY ANALYST - BULLETPROOF GLI GROUP</b></h4>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Sept 2023 </h6>
+              <p>
+                <dl>
+                  <dt> - A point of contact for customers needing technical assistance with issues such as:</dt>
+                    <dl>
+                      <dd>Add or removal of programs and software.</dd>
+                      <dd>Communicating using effective understandable language</dd>
+                    </dl>
+                  <dt> - Investigation of system for potential malicious malware, or ransomwares.</dt>
+                  <dt> - Analyzing and actioning alerts coming into Sentinel ensuring compliance.</dt>
+                </dl>  
+              </p>
+              <hr>
+    
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity"><b>ACCESS MANAGEMENT ANALYST - SERVICE NEW BRUNSWICK</b></h4>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MAY 2021 - SEPT 2021 (Work Placement)</h6>
+              <p>
+                <dL>
+                  <dt> - Contact with clients regarding overdue accounts and documents all complaints.</dt>
+                  <dt> - Reconciliation of accounts for balancing and accuracy.</dt>
+                  <dt> - Data entry of payments and of invoicing to business clients.</dt>
+                  <dt> - Verifying accuracy of accounts.</dt>
+                </dL>	</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity"><b>ACCOUNT RECEIVABLE CLERK - HORIZON HEALTH</b></h4>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2018 - 2020</h6>
+              <p>
+                <dl>
+                  <dt> - Department support for manage access for:
+                    <dl>
+                      <dd> - Users, Groups, Mailboxes, Instant Messaging.</dd>
+                      <dd> - Remote access services network shares</dd>
+                      <dd> - Resetting of passwords and holding accounts</dd>
+                    </dl>
+                  <dt> - Ensure that applications/data security is met through compliance.</dt>
+                  <dt> - Assist in the development and documentation of new processes.</dt>
+                  <dt> - Ensure requests are completed within key performance indicators.</dt>
+                </dl> </p><br>
+            </div>
+    
+            <div class="w3-container">
+              <h4 class="w3-opacity"><b>ACCOUNT RECEIVABLE CLERK - SERVICE NEW BRUNSWICK</b></h4>
+              <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Sept 2018</h6>
+              <p>
+                <dL>
+                  <dt> - Contact with students regarding overdue accounts and documents all complaints.</dt>
+                  <dt> - Calculate and negotiate payment options with affordability.</dt>
+                  <dt> - Performing of skip tracing to locate customers that have moved.</dt>
+                  <dt> - Verifying accuracy of accounts for bankruptcy.</dt>
+                </dL> </p><br>
+            </div>
+    
+            <h6><a href="Richard Breau.pdf" open="Resume" class="btn"><i class="fa fa-folder"></i> OPEN RESUME</button></a></h6>
+    
+          </div>
+     -->
+          
+    
+        <!-- End Right Column -->
+        </div>
+        
+      <!-- End Grid -->
+      </div>
+      
+      <!-- End Page Container -->
+    </div>
+    
+
+  
+          
+  <!-- <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div> -->
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">14+</span><br> -->
+    <!-- Partners -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">55+</span><br>
+    Projects Done -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">89+</span><br>
+    Happy Clients -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">150+</span><br>
+    Meetings -->
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="project">
+  <h2 class="w3-center"><b>MY WORK</b></h2>
+  <!-- <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br> -->
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
+    </head>
+    <body>
+    
+
+<!-- HTML works -->
+    <h4>HTML Works</h4>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h5>Calculator</h5>
+          <a href="https://richardbreau.github.io/Calculator/" class="live-link" target="_blank">Live</a>
+          <a href="https://github.com/RichardBreau/Calculator.git" class="github-link" target="_blank">Github</a>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h5>Pong Game</h5>
+          <a href="https://richardbreau.github.io/pongGame/" class="live-link" target="_blank">Live Project</a>
+          <a href="https://github.com/RichardBreau/pongGame.git" class="github-link" target="_blank">Github</a>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5>Quote Generator</h5>
+          <a href="https://richardbreau.github.io/quotegenerator/" class="live-link" target="_blank">Live Project</a>
+          <a href="https://github.com/RichardBreau/quotegenerator.git" class="github-link" target="_blank">Github</a>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h5>Countdown</h5>
+          <a href="https://richardbreau.github.io/CountdownClock/" class="live-link" target="_blank">Live Project</a>
+          <a href="https://github.com/RichardBreau/CountdownClock.git" class="github-link" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h4>PYTHON Works in progress</h4>
+      <!-- <p>Resize the browser window to see the effect.</p> -->
+      
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h5>Golf</h5>
+            <p>Calculates Handicap</p>
+            <p><a href="//replit.com/@richardbreau/Golf-Handicap?v=1">Handicap Calculator</a></p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <h5>Password</h5>
+            <p>Generates a password</p>
+            <p><a href="//replit.com/@richardbreau/Password-Generator?v=1">Password Generator</a></p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h5>Magic</h5>
+            <p>Fortune Teller</p>
+            <p><a href="//replit.com/@richardbreau/Magic-Fortune?v=1">Magic Fortune Teller</a></p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h5>Leap Year</h5>
+            <p>Calculates leap year</p>
+            <p><a href="//replit.com/@richardbreau/Leap-Year-Calculator?v=1">Leap Year</a></p>
+          </div>
+        </div>
+      </div>
+          
+ 
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div> -->
+  </div>
+  <!-- <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p> -->
+  <div class="w3-light-grey">
+    <!-- <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div> -->
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">14+</span><br> -->
+    <!-- Partners -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">55+</span><br>
+    Projects Done -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">89+</span><br>
+    Happy Clients -->
+  </div>
+  <div class="w3-quarter w3-section">
+    <!-- <span class="w3-xlarge">150+</span><br>
+    Meetings -->
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h2 class="w3-center"><b>CONTACT ME</b></h2>
+  <p class="w3-center"><em></em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="cuba.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+       <h4><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Fredericton NB<br></h4>
+       <h4><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-506-476-5349<br></h4>
+        <h4><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: richardbreau@gmail.com<br></h4>
+        <h4><i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> https://www.linkedin.com/in/richard-breau<br></h4>
+        <h4> <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> https://github.com/RichardBreau<br></h4>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-large w3-section">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <i class="fa fa-github w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+ 
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
